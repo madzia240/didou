@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sacramento', cursive;
+    color: #3E585B;
+}
+
+h2 {
+    font-size: 7vh;
+}
+
+p {
+    font-size: 3.5vh;
+    font-family: 'Quicksand', sans-serif;
+}
+
+section {
+    margin: 5vh 0;
+    padding: 5vh 2vw;
+    min-height: 90vh;
+}
+
+hr {
+    transform: translateX(-140%);
+    margin-bottom: 5vh;
+    height: 3px;
+    width: 80%;
+    border-width: 0;
+    background-color: #3E585B;
+    transition: 1.2s;
+}
+
+/* goToTop */
+.goToTop {
+    position: fixed;
+    bottom: 2vh;
+    right: 3vw;
+    font-size: 4vh;
+    opacity: 0;
+    transition: .8s;
+    animation: goToTop .8s infinite linear alternate;
+}
+
+@keyframes goToTop {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20%);
+    }
+}
+
+/* logo */
+.logo img {
+    position: fixed;
+    top: 1vh;
+    left: 2vw;
+    z-index: 3;
+    width: 60px;
+    border: 1.5px solid #3E585B;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #3E585B;
+}
+
+@media (min-width: 1024px) {
+    .logo img {
+        width: 100px;
+    }
+}
+
+/* burger */
+.burger {
+    position: fixed;
+    top: 2vh;
+    right: 4vw;
+    z-index: 2;
+    font-size: 4vh;
+    text-shadow: 0 0 10px white;
+}
+
+.fa-bars {
+    display: block;
+}
+
+.fa-times {
+    display: none;
+}
+
+/* nav */
+nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    background-color: #C7E4E8;
+    transition: .8s;
+    z-index: 1;
+}
+
+nav ul {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    font-size: 5vh;
+    line-height: 10vh;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: .7s;
+}
+
+nav ul li:hover {
+    background-color: #AFA6CA;
+}
+
+@media (orientation: landscape) {
+    nav ul {
+        height: 50vh;
+    }
+
+    nav ul li {
+        font-size: 7vh;
+        line-height: 12.5vh;
+    }
+
+    .burger {
+        top: 5vh;
+        font-size: 6vh;
+    }
+}
+
+/* header */
+header {
+    height: 100vh;
+    background-color: #E2DBF4;
+    background-image: url('../img/hustawka2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+header div {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    padding: 5vh 0;
+    background-color: rgba(255, 255, 255, .7);
+    text-align: center;
+    box-shadow: 0 0 10px #3E585B;
+}
+
+@media (orientation: landscape) {
+    header {
+        background-image: url('../img/hustawka-header.jpg');
+    }
+}
+
+/* main */
+main {
+    width: 80%;
+    max-width: 1024px;
+    margin: 5vh auto;
+}
+
+/* about */
+.about {}
+
+
+
+/* products */
+.products {
+    height: 40vh;
+    background-color: #C7E4E8;
+}
+
+/* gallery */
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery .img {
+    margin: 2vh auto;
+    width: 90%;
+}
+
+.img img {
+    display: block;
+    width: 100%;
+}
+
+a.more {
+    text-decoration: none;
+    font-family: 'Sacramento', cursive;
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .img {
+        flex-basis: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .img {
+        flex-basis: 26%;
+    }
+}
+
+/* kontakt */
+
+.contact {
+    height: 40vh;
+    background-color: #E2DBF4;
+}
+
+.contact p {
+    line-height: 2;
+    padding-left: 5vw;
+}
+
+/* footer */
+footer {
+    height: 5vh;
+    background-color: #AFA6CA;
+    text-align: center;
+}
+
+footer p {
+    font-size: 3vh;
+    line-height: 5vh;
+    font-family: 'Sacramento', cursive;
+}
