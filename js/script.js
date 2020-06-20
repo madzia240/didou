@@ -4,7 +4,6 @@ const sideMenu = document.querySelector('.sidemenu')
 let activeSideMenu = true;
 
 changeSideMenu = () => {
-    console.log(activeSideMenu)
     if (activeSideMenu) {
         sideMenu.style.right = '0';
         activeSideMenu = !activeSideMenu

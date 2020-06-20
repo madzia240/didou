@@ -99,14 +99,14 @@ hr {
 /* sidemenu */
 .sidemenu {
     position: fixed;
-    top: 50%;
+    top: 60%;
     right: -40px;
-    transform: translate(0, -50%);
     height: 70px;
     width: 90px;
     background-color: #d7E4E8;
     border-radius: 10px 0 0 10px;
     border: 1px solid #3E585B;
+    border-right: none;
     transition: .7s;
     display: flex;
     z-index: 3;
