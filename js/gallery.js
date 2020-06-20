@@ -1,7 +1,10 @@
 // loading
 const hrTitle = document.querySelector('.title hr')
 
-window.onload(hrTitle.style.transform = 'translate(-10%)')
+
+window.addEventListener('load', () => {
+    hrTitle.style.transform = 'translate(-10%)'
+})
 
 // Open the Modal
 function openModal() {

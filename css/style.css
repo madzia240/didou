@@ -96,6 +96,45 @@ hr {
     display: none;
 }
 
+/* sidemenu */
+.sidemenu {
+    position: fixed;
+    top: 50%;
+    right: -40px;
+    transform: translate(0, -50%);
+    height: 70px;
+    width: 90px;
+    background-color: #d7E4E8;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #3E585B;
+    transition: .7s;
+    display: flex;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.sidemenu .aSide {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.sidemenu .aSide a {
+    font-size: 20px;
+}
+
+.sidemenu p {
+    display: block;
+    transform: rotate(270deg) translateY(7px);
+    font-size: 17px;
+    text-align: center;
+    flex-basis: 40%;
+
+}
+
 /* nav */
 nav {
     position: fixed;

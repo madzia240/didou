@@ -1,3 +1,19 @@
+// sidemenu
+const sideClick = document.querySelector('.side')
+const sideMenu = document.querySelector('.sidemenu')
+let activeSideMenu = true;
+
+changeSideMenu = () => {
+    console.log(activeSideMenu)
+    if (activeSideMenu) {
+        sideMenu.style.right = '0';
+        activeSideMenu = !activeSideMenu
+    } else {
+        sideMenu.style.right = '-40px';
+        activeSideMenu = !activeSideMenu
+    }
+}
+sideClick.addEventListener('click', changeSideMenu)
 // burger
 
 const bars = document.querySelector('.fa-bars')
