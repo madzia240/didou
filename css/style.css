@@ -6,11 +6,13 @@
     color: #3E585B;
 }
 
+
 h2 {
     font-size: 7vh;
 }
 
-p {
+p,
+a {
     font-size: 3.5vh;
     font-family: 'Quicksand', sans-serif;
 }
@@ -62,6 +64,12 @@ hr {
     border: 1.5px solid #3E585B;
     border-radius: 50%;
     box-shadow: 0 0 5px #3E585B;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
 }
 
 @media (min-width: 1024px) {
@@ -113,6 +121,7 @@ nav ul li {
     text-transform: capitalize;
     font-weight: bold;
     transition: .7s;
+    cursor: pointer;
 }
 
 nav ul li:hover {
@@ -199,21 +208,29 @@ main {
 }
 
 a.more {
+    display: block;
     text-decoration: none;
     font-family: 'Sacramento', cursive;
     font-size: 4vh;
     font-weight: bold;
+    text-align: right;
 }
+
+
 
 @media (min-width: 768px) {
     .img {
         flex-basis: 40%;
+        height: 240px;
+        overflow: hidden;
     }
 }
 
 @media (min-width: 1024px) {
+
     .img {
         flex-basis: 26%;
+
     }
 }
 
@@ -227,6 +244,10 @@ a.more {
 .contact p {
     line-height: 2;
     padding-left: 5vw;
+}
+
+.contact a {
+    text-decoration: none;
 }
 
 /* footer */
